@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment version="2304" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TESTvc" customModule="CarProject" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="weChatPay" destination="393-6G-iJN" id="lHZ-m9-Gxg"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fKK-ZW-DPQ">
+                    <rect key="frame" x="60" y="155" width="255" height="30"/>
+                    <color key="backgroundColor" red="0.49173495169999998" green="0.6921854019" blue="0.94121527670000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="8oJ-Ce-i1D"/>
+                    </constraints>
+                    <state key="normal" title="支付宝">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="aliPayAction:" destination="-1" eventType="touchUpInside" id="YBu-QF-yfu"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="393-6G-iJN">
+                    <rect key="frame" x="60" y="240" width="255" height="30"/>
+                    <color key="backgroundColor" red="0.39360812309999998" green="0.80381804700000004" blue="0.54120039939999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="LPK-IW-DTR"/>
+                    </constraints>
+                    <state key="normal" title="微信">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="weChatPayAction:" destination="-1" eventType="touchUpInside" id="N8S-s9-jnk"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zCl-CH-2RB">
+                    <rect key="frame" x="60" y="320" width="255" height="30"/>
+                    <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="CKk-L9-hMV"/>
+                    </constraints>
+                    <state key="normal" title="地图">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="mapAction:" destination="-1" eventType="touchUpInside" id="pdu-IH-KPz"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fKK-ZW-DPQ" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="2de-wa-0AT"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="393-6G-iJN" secondAttribute="trailing" constant="60" id="5sZ-KE-M40"/>
+                <constraint firstItem="zCl-CH-2RB" firstAttribute="top" secondItem="393-6G-iJN" secondAttribute="bottom" constant="50" id="6Pc-Rz-CcD"/>
+                <constraint firstItem="zCl-CH-2RB" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="60" id="D5r-FI-3sf"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="fKK-ZW-DPQ" secondAttribute="trailing" constant="60" id="I8M-XE-uJQ"/>
+                <constraint firstItem="393-6G-iJN" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="JO9-Z0-bEj"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="zCl-CH-2RB" secondAttribute="trailing" constant="60" id="VAa-8P-pUk"/>
+                <constraint firstItem="393-6G-iJN" firstAttribute="top" secondItem="fKK-ZW-DPQ" secondAttribute="bottom" constant="55" id="X20-cW-qmI"/>
+                <constraint firstItem="fKK-ZW-DPQ" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="135" id="dSN-6e-UAr"/>
+                <constraint firstItem="fKK-ZW-DPQ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="60" id="hf1-7u-9Yd"/>
+                <constraint firstItem="393-6G-iJN" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="60" id="nxx-6m-LUt"/>
+                <constraint firstItem="zCl-CH-2RB" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="xOf-l2-V9f"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="25.5" y="52.5"/>
+        </view>
+    </objects>
+</document>
